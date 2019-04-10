@@ -11,7 +11,7 @@ const out = document.getElementById('out');
     writePerson() currently uses lName as the unique ID, so people with the same last name overwrite each other. Fix without breaking searching?
 */
 function writePerson(fName, lName, age, gender, phone, email){
-    let person ={
+    let person = {
         fName: fName,
         lName: lName,
         age: age,
@@ -19,7 +19,7 @@ function writePerson(fName, lName, age, gender, phone, email){
         phone: phone,
         email: email,
     }
-    localStorage.setItem(person.lName, JSON.stringify(person));
+    localStorage.setItem(person.fName + person.lName, JSON.stringify(person));
 }
 
 inp.onclick = function(){
