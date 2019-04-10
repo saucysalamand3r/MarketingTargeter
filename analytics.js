@@ -1,6 +1,6 @@
-const ageChart = document.getElementById('ageChart').getContext('2d');
+const ageCh = document.getElementById('ageChart').getContext('2d');
 
-var ageChartData = new CharacterData(ageChart, {
+var ageChart = new CharacterData(ageCh, {
     type: 'bar',
     data: {
         labels: [Test, Test2, Test3],
