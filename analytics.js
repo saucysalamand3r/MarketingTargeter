@@ -1,6 +1,6 @@
 let ages = [];
 for (i=0; i < localStorage; i++){
-    ages[i] = localStorage.getItem(localStorage.key(i)).age;
+    ages[i] = JSON.parse(localStorage.getItem(localStorage.key(i))).age;
 }
 
 // Create Age Chart
