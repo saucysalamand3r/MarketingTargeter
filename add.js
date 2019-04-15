@@ -29,7 +29,7 @@ inp.onclick = function(){
     const gender = inpGender.value;
     const phone = inpPhone.value;
     const email = inpEmail.value;
-    if(fName != null && lName != null && age != null && gender != null && phone != null && email != null){
+    if(fName != "" && lName != "" && age != "" && gender != "" && phone != "" && email != ""){
         writePerson(fName, lName, age, gender, phone, email);
     }
 }
