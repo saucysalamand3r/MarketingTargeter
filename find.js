@@ -11,12 +11,21 @@ function readPerson(lName){
 
 findBtn.onclick = function(){
     output.innerHTML = '';
-    const searchText = searchTextBox.value;
-    if(localStorage.getItem(searchText)){
-        display(readPerson(searchText));
-    }
+    let searchText = searchTextBox.value;
+    search(searchText);
 }
 
 function display(person){
     output.innerHTML += `<div class='card'><ul class='list-group list-group-flush'><li class='list-group-item'>Name: ${person.fName} ${person.lName}</li><li class='list-group-item'>Age: ${person.age}</li><li class='list-group-item'>Gender: ${person.gender}</li><li class='list-group-item'>Phone Number: ${person.phone}</li><li class='list-group-item'>Email Address: ${person.email}</li></ul></div>`;
+}
+
+function search(term){
+    for(i=Date.now();i>1555338921013;i--){
+        const ithPerson = localStorage.getItem(i);
+        if(ithPerson != null){
+            if (ithPerson.indexOf(term) != -1) {
+                display(JSON.parse(ithPerson));
+            } 
+        }
+    }
 }
