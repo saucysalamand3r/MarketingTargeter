@@ -20,7 +20,7 @@ function display(person){
 }
 
 function search(term){
-    for(i=Date.now();i>Date.now()-86400000;i--){
+    for(i=Date.now()/1000;i>50000;i--){
         const ithPerson = localStorage.getItem(i);
         if(ithPerson != null){
             if (ithPerson.indexOf(term) != -1) {

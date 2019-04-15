@@ -19,7 +19,7 @@ function writePerson(fName, lName, age, gender, phone, email){
         phone: phone,
         email: email,
     }
-    localStorage.setItem(Date.now(), JSON.stringify(person));
+    localStorage.setItem(Date.now()/1000, JSON.stringify(person));
 }
 
 inp.onclick = function(){
