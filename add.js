@@ -1,3 +1,7 @@
+/*
+    imports elements from the page as variables
+*/
+
 const inp = document.getElementById('inp');
 const inpFName = document.getElementById('inpFName');
 const inpLName = document.getElementById('inpLName');
@@ -7,6 +11,10 @@ const inpPhone = document.getElementById('inpPhone');
 const inpEmail = document.getElementById('inpEmail');
 const inpInterest = document.getElementById('inpInterest');
 const out = document.getElementById('out');
+
+/*
+    writes a person entry to the localStorage database
+*/
 
 function writePerson(fName, lName, age, gender, phone, email, interest){
     let person = {
@@ -20,6 +28,11 @@ function writePerson(fName, lName, age, gender, phone, email, interest){
     }
     localStorage.setItem(Date.now()-1555947753954, JSON.stringify(person));
 }
+
+
+/*
+    retrieves values from page, validates them, and adds them to the database via writePerson()
+*/
 
 inp.onclick = function(){
     const fName = inpFName.value;
