@@ -21,7 +21,7 @@ function writePerson(fName, lName, age, gender, phone, email, interest){
         email: email,
         interest: interest,
     }
-    localStorage.setItem(Date.now()-1555346228071, JSON.stringify(person));
+    localStorage.setItem(Date.now()-(Date.now()-86400000), JSON.stringify(person));
 }
 
 inp.onclick = function(){
