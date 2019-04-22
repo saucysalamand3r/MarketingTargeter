@@ -16,7 +16,7 @@ findBtn.onclick = function(){
 }
 
 function display(person){
-    output.innerHTML += `<div class='card'><ul class='list-group list-group-flush'><li class='list-group-item'>Name: ${person.fName} ${person.lName}</li><li class='list-group-item'>Age: ${person.age}</li><li class='list-group-item'>Gender: ${person.gender}</li><li class='list-group-item'>Phone Number: ${person.phone}</li><li class='list-group-item'>Email Address: ${person.email}</li></ul></div>`;
+    output.innerHTML += `<div class='card'><ul class='list-group list-group-flush'><li class='list-group-item'>Name: ${person.fName} ${person.lName}</li><li class='list-group-item'>Age: ${person.age}</li><li class='list-group-item'>Gender: ${person.gender}</li><li class='list-group-item'>Phone Number: ${person.phone}</li><li class='list-group-item'>Email Address: ${person.email}</li><li class='list-group-item'>Primary Area of Interest: ${person.interest}</li></ul></div>`;
 }
 
 function search(term){
