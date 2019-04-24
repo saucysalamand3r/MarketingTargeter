@@ -33,7 +33,7 @@ function display(person){
 */
 
 function search(term){
-    for(i=Date.now()-1555947753954;i>0;i--){
+    for(i=Date.now()-1556122193335;i>0;i--){
         const ithPerson = localStorage.getItem(i);
         if(ithPerson != null){
             if (ithPerson.indexOf(term) != -1) {
